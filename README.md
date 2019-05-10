@@ -1,4 +1,4 @@
-# Accessing and Exploiting Control Systems (A&ECS) Interface
+# Simulator Intelligent Electronic Device (IED)
 This project is an interface that provides basic functionality found in Industrial Control Systems devices, such as Intelligent Electronic Devices (IED). The goal of this project is to provide a lab device that will help students understand hardware analysis and exploitation techniques. The base device is a [ARM® Cortex®-M4F Based MCU TM4C123G LaunchPad™ Evaluation Kit](http://www.ti.com/tool/EK-TM4C123GXL) which provides multiple capabilities to interface with embedded device components such as microcontollers, EEPROM, fieldbus protocols, serial protocols, firmware, and memory.
 
 # Capabilities
@@ -9,6 +9,19 @@ This project is an interface that provides basic functionality found in Industri
 * Encryption Functionality
   * Encryption / decryption of hex strings.
   * Get / Set encryption key.
+* EEPROM Data
+  * Programs and interacts with a Microchip 24LC08B EEPROM via Inter-Integrated Circuit (I2C).
+  * Data is automatically programmed to the EEPROM when the device's interface starts.
+  * Data currently includes a password, encryption key in plain text, encryption key in ASCII, and encryption key encoded Base64.
+
+# Board Pinout to EEPROM
+
+           ------
+      A0  |      |Vcc----VBus
+      A1  |      |WP-----GND
+      A2  |      |SCL----PD_0/SCL---10 Ohm Resistor ---3.3v
+ GND--GND |      |SDA----PD_1/SDA---10 Ohm Resistor ---3.3v
+           ------
 
 # Compile Flags
 
@@ -24,8 +37,7 @@ The following compile options were copied out of the TI CCS build settings. This
 * Fix decryption one-off error when displaying decrypted data back to user.
 * Update UART to be able to handle backspace.
 * Add encryption of strings rather than hex data.
-* Add external EEPROM. Note that the TM4C123GH6PM does have internal EEPROM, but external is needed to provide interactions via I2C and SPI fieldbus communications.
-* Add MODBUSRTU functionality. Note this might require movind to second USB interface instead of doing UART thru the ICDI.
+* Add MODBUSRTU functionality. Note this might require moving to second USB interface instead of doing UART thru the ICDI.
 
 # Resources
 This project takes from several efforts:
