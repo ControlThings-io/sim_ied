@@ -15,14 +15,14 @@ This project is an interface that provides basic functionality found in Industri
   * Data currently includes a password, encryption key in plain text, encryption key in ASCII, and encryption key encoded Base64.
 
 # Board Pinout to EEPROM
-`
+```
            ------
       A0  |      |Vcc----VBus
       A1  |      |WP-----GND
       A2  |      |SCL----PD_0/SCL---10 Ohm Resistor ---3.3v
  GND--GND |      |SDA----PD_1/SDA---10 Ohm Resistor ---3.3v
            ------
-`
+```
 
 # Compile Flags
 
