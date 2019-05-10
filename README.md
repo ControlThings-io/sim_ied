@@ -19,8 +19,8 @@ This project is an interface that provides basic functionality found in Industri
            ----------
       A0  | EEPROM    |Vcc----VBus
       A1  | Microchip |WP-----GND
-      A2  | 24LC08B   |SCL----PD_0/SCL---10 Ohm Resistor ---3.3v
- GND--GND |           |SDA----PD_1/SDA---10 Ohm Resistor ---3.3v
+      A2  | 24LC08B   |SCL----PD_0/SCL---10k (Brown / Black / Orange / Gold) Ohm Resistor ---3.3v
+ GND--GND |           |SDA----PD_1/SDA---10k (Brown / Black / Orange / Gold) Ohm Resistor ---3.3v
            ----------
 ```
 
