@@ -1,6 +1,10 @@
 # Simulator Intelligent Electronic Device (IED)
 This project is an interface that provides basic functionality found in Industrial Control Systems devices, such as Intelligent Electronic Devices (IED). The goal of this project is to provide a lab device that will help students understand hardware analysis and exploitation techniques. The base device is a [ARM® Cortex®-M4F Based MCU TM4C123G LaunchPad™ Evaluation Kit](http://www.ti.com/tool/EK-TM4C123GXL) which provides multiple capabilities to interface with embedded device components such as microcontollers, EEPROM, fieldbus protocols, serial protocols, firmware, and memory.
 
+# Builds
+
+The most recent build can be found in the firmware directory.
+
 # Capabilities
 
 * Firmware Extraction and Analysis
