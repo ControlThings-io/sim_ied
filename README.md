@@ -50,3 +50,14 @@ This project takes from several efforts:
 * [ControlThings.io](https://www.controlthings.io) - tools and training to help the Industrial Control System (ICS) industry.
 * [Tiny-AED-c](https://github.com/kokke/tiny-AES-c) - Small portable AES128/192/256 in C
 * [TI Code Composer Studio](http://www.ti.com/tool/CCSTUDIO) - CSS Integrated Development Environment (IDE) and the example projects it provides.
+* [TI Lauchpad EK-TM4C123GLX Pinout Diagram](https://energia.nu/pinmaps/img/EK-TM4C123GXL.jpg)
+
+# Bill of Materials (BOM)
+The following items are required for this project.
+
+* [TI Launchpad EK-TM4C123GLX](http://www.ti.com/tool/ek-tm4c123gxl?keyMatch=ek-tm4c123gxl&tisearch=Search-EN-Everything)
+* [Microchip 24LC08B EEPROM](https://www.mouser.com/ProductDetail/Microchip-Technology/24LC08B-SN?qs=YUl711QUJY3X%252BgVM9S8n3g%3D%3D)
+* 2 - [10k Ohm Resisters](https://www.amazon.com/Projects-100EP51210K0-10k-Resistors-Pack/dp/B0185FIOTA)
+* [Breadboard](https://www.sparkfun.com/products/12043)
+* 6 - [Jumper Wires](https://www.sparkfun.com/products/12795)
+* Optional: [TI Code Composer Studio](http://www.ti.com/tool/CCSTUDIO)
