@@ -45,7 +45,7 @@ These are identified by the keyword "source" in each file. These can be updated 
 * /usr/share/openocd/scripts/chip/ti/lm3s/lm3s.tcl
 * /usr/share/openocd/scripts/chip/ti/lm3s/lm3s_regs.tcl
 
-### Flash LaunchPad
+#### Connect LaunchPad
 * Ensure LaunchPad is connected and detected by system.
   * Type `lsusb` and look for an entry that is similar to the following:
     * `Bus 003 Device 007: ID 1cbe:00fd Luminary Micro Inc. In-Circuit Debug Interface`
@@ -62,7 +62,8 @@ Info : clock speed 32766 kHz
 Info : ICDI Firmware version: 9270
 Info : lm4f120h5qr.cpu: hardware has 6 breakpoints, 4 watchpoints
 ```
-* Run the flashing command
+
+#### Save Original LaunchPad Firmware
 * Connect to On-Chip Debugger
 * Dump the contents of the device and store for future use and reflashing.
   * The following commands dump all flash and SRAM memory according to Memory Map. 
@@ -84,6 +85,8 @@ dumped 262144 bytes in 9.423513s (27.166 KiB/s)
 dumped 32768 bytes in 1.191024s (26.868 KiB/s)
 > Connection closed by foreign host.
 ```
+
+#### Flash SIM-IED to LaunchPad
 * Program LaunchPad using OpenOCD
   * Writes the firmware to the Launchpad device and runs the firmware.
 
@@ -118,7 +121,6 @@ verified 19816 bytes in 0.394521s (49.051 KiB/s)
 adapter speed: 21893 kHz
 shutdown command invoked
 ```
-
 
 ## Connecting to SIM-IED
 * Connect EEPROM to the LaunchPad using the pinout above.
