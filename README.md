@@ -34,17 +34,17 @@ TODO
 ## Connecting to SIM-IED
 * Connect EEPROM to the LaunchPad using the pinout above.
 * Connect to system's USB and make sure it connects to your VM, if necessary.
-  * Type 'lsusb' and look for an entry that is similar to the following:
-    * 'Bus 003 Device 007: ID 1cbe:00fd Luminary Micro Inc. In-Circuit Debug Interface'
+  * Type `lsusb` and look for an entry that is similar to the following:
+    * `Bus 003 Device 007: ID 1cbe:00fd Luminary Micro Inc. In-Circuit Debug Interface`
 * Connect to the SIM-IED serial interface
-  * 'screen /dev/ttyACM0 115200'
+  * `screen /dev/ttyACM0 115200`
 * Interace with interface
   * Once connected the user will need to hit enter to interact with the device.
-    * Enter may return, 'Bad Command!'
-  * Type 'help' to list commands
+    * Enter may return, `Bad Command!`
+  * Type `help` to list commands
     * NOTE: Back space is currently not enabled on this interface.
   * Hit the reset button on the LaunchPad
-    * This should return 'Control Things IED Interface!'
+    * This should return `Control Things IED Interface!`
 
 # Compile Flags
 
