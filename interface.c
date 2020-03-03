@@ -149,7 +149,9 @@ int main(void)
     //
     // Setup EEPROM - this will test to see if the password has been written to
     //                to the EEPROM. If no password, then reset all EEPROM data.
+#ifdef USE_EEPROM
     setEEPROMData();
+#endif
 
     UARTprintf("\n\nControl Things IED Interface!\n");
     //UARTprintf("Type 'help' for a list of commands\n");
@@ -192,7 +194,8 @@ int main(void)
         //
         if(i32CommandStatus == CMDLINE_BAD_CMD)
         {
-            UARTprintf("Bad command!\n");
+            //UARTprintf("Bad command!\n");
+            UARTprintf("\n\nControl Things IED Interface!\n");
         }
 
         //

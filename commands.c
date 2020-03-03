@@ -36,11 +36,13 @@ tCmdLineEntry g_psCmdTable[] =
     {"decbytes", CMD_decbytes,  " : String of bytes to Decrypt. Input must be divisible by 16. Example: 000102030405060708090a0b0c0d0e0f"},
     {"getkey",   CMD_gkey,      " : Get current encryption key. Default: 000102030405060708090a0b0c0d0e0f"},
     {"setkey",   CMD_skey,      " : Set encryption key. Key must be 128-Bits which is 16 bytes. See default value."},
+#ifdef USE_EEPROM
     {"dumpdata", CMD_dumpdata,  " : Get data from the external EEPROM. Prints four blocks of 256 bytes in hex format."},
     {"getdata",  CMD_getdata,   " : Get data from the external EEPROM. Requires page, starting position, and count. Example: getdata 0 0 32"},
     {"setdata",  CMD_setdata,   " : Set lab data on the external EEPROM. "},
     {"clrdata",  CMD_clrdata,   " : Clear all data on external EEPROM. Requires password. Example: clrdata <pass>"},
     {"clrpage",  CMD_clrpage,   " : Clear a page of data on external EEPROM. Requires password. Input must be 0-3. Example: clrpage <pass> 2"},
+#endif
     //{"testpass", CMD_testpass,  " : Test if use provided password."},
     { 0, 0, 0 }
 };
