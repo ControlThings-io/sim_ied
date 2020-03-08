@@ -115,3 +115,5 @@ utils/*
 .DS_Store
 /Debug/
 /Release/
+targetConfigs/Tiva TM4C123GH6PM.ccxml
+targetConfigs/readme.txt
